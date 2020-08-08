@@ -15,7 +15,7 @@ class CashRegister
     if quantity > 1
       counter = 0     
       while counter < quantity      #doesnt forget about the previous total
-        @items << item
+        @items << item              #adds the numbers of the item equal to it's quantity to the array of listed items
         counter += 1
       end
     else
