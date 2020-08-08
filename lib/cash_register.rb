@@ -5,7 +5,7 @@ class CashRegister
       #total is supposed to return the current total
 
   def initialize(discount = 0)
-    @total = 0    # 'sets an instance variable @total on initialization to zero
+    @total = 0    # 'sets an instance variable @total on initialization to default to zero
     @discount = discount   # optionally takes an employee discount on initialization'
     @items = []    #we set @items to an empty array because we use it to return an array containing all items that have been added
   end
