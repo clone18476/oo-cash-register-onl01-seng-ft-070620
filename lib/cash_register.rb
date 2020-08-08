@@ -24,7 +24,7 @@ class CashRegister
   end
 
   def apply_discount   # the cash register was initialized with an employee discount^^^
-    if @discount > 0
+    if @discount > 0     #if there is a discount it runs this
       @to_take_off = (price * discount)/100     # applies the discount to the total price
       @total -= @to_take_off    # 'reduces the total
       return "After the discount, the total comes to $#{total}."  #  returns success message with updated total
