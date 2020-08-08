@@ -10,7 +10,7 @@ class CashRegister
     @items = []    #we set @items to an empty array because we use it to return an array containing all items that have been added
   end
 
-  def add_item(item, price, quantity = 1)  #add item accepts a title and a price and increases the total
+  def add_item(item, price, quantity = 1)  #add item accepts a title and a price and increases the total by a default value of 1
          @total += price * quantity      # add item also accepts an optional quantity
     if quantity > 1
       counter = 0     
